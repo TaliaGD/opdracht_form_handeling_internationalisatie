@@ -16,16 +16,29 @@ public class Blogpost {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int id;
+
     @NotBlank
     @NotNull
     @Size (min = 4, max=20)
     public String user;
+
     public LocalDateTime date ;
+
     @NotBlank
     public String post;
+    @NotBlank
+    public String titel;
 
     public Blogpost() {
         date=LocalDateTime.now();
+    }
+
+    public String getTitel() {
+        return titel;
+    }
+
+    public void setTitel(String titel) {
+        this.titel = titel;
     }
 
     public int getId() {

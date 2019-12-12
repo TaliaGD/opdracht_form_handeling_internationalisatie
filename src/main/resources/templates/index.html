@@ -41,10 +41,18 @@
                 <div class="Blogform___Invulveld____User"><input type="text" th:field="*{user}" id="user"
                                                                  th:placeholder="#{col_e.g.user}"></div>
 
-                <div class="Error"><span th:if="${#fields.hasErrors('user')}" th:errors="*{user}"
+                    <div class="Error"><span th:if="${#fields.hasErrors('user')}" th:errors="*{user}"
                                                             class="error"></span></div>
 
                 <br>
+                <div class="Blogform___Titel"><label for="titel" th:text="#{col_titel}"></label></div>
+                    <div class="Error"><span th:if="${#fields.hasErrors('titel')}" th:errors="*{titel}"
+                                         class="error"></span></div>
+
+                <div class="Blogform___Invulveld____Titel"><input type="text" th:field="*{titel}" id="titel"
+                                                                 th:placeholder="#{col_e.g.titel}"></div>
+
+
                 <div class="Blogform___Titel____Post"><label for="post" th:text="#{col_post}"> </label></div>
 
                 <div class="Blogform___Invulveld____Post"><textarea rows="5" cols="60" th:field="*{post}" id="post"
@@ -64,7 +72,7 @@
 
                 <div class="Blogpost___Post">
                     <div class="Blogpost___Titel___Post">
-                        <p th:text="#{col_post}"></p>
+                        <p th:text="${Blogpost.titel}"></p>
                     </div>
 
                     <div class="Blogpost___Text___Post">
