@@ -21,7 +21,7 @@ public class IndexController {
 
     @ModelAttribute(value = "alleBlogposts")
     public Iterable<Blogpost> getAllBlogposts(){
-        return dao.findAll();
+        return dao.findAllChronological();
     }
     //model atribute vooe één nieuwe blogpost
     @ModelAttribute(value = "nBlogpost")
