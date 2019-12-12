@@ -12,7 +12,6 @@ h1{
     text-align: center;
     padding:20px;
     color: antiquewhite;
-
 }
 
 .Blogform{
@@ -39,12 +38,18 @@ h2{
 .Blogpost___Post___Titel{
     text: bold;
 }
+.Blogpost___Text___Post{
+    background-color: #ff5e36;
+    padding: 10px;
+}
+.infoOverPost{
+    text-align: right;
+}
 a{
     text-decoration: none;
+    color: black!important;
 }
-button{
-    color: black;
-}
+
 
 
 .Blogpost:nth-child(even){
@@ -52,4 +57,8 @@ button{
 }
 .Blogpost:nth-child(odd){
     background-color: #2d2123 !important;
+}
+.error{
+    color: #c62221;
+    font-weight: bold;
 }
