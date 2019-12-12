@@ -13,6 +13,16 @@ h1{
     padding:20px;
     color: antiquewhite;
 }
+.Blogtitel{
+    border-bottom-style: solid;
+    border-bottom-color: antiquewhite;
+
+}
+.Invulveld input,
+.Invulveld textarea{
+    border-radius:  5px !important;
+    padding: 3px 7px;
+}
 
 .Blogform{
     text-align: left;
@@ -27,6 +37,7 @@ h1{
 .Blogform___Titel____Post{
     text: bold;
 }
+
 h2{
     color: antiquewhite;
 }

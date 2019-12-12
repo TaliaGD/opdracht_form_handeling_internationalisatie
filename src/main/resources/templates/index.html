@@ -38,7 +38,7 @@
                 <!--  fields zit standaard in time leaf -->
                 <div class="Blogform___Titel____User"><label for="user" th:text="#{col_user}"></label></div>
 
-                <div class="Blogform___Invulveld____User"><input type="text" th:field="*{user}" id="user"
+                <div class="Invulveld"><input type="text" th:field="*{user}" id="user"
                                                                  th:placeholder="#{col_e.g.user}"></div>
 
                     <div class="Error"><span th:if="${#fields.hasErrors('user')}" th:errors="*{user}"
@@ -49,13 +49,13 @@
                     <div class="Error"><span th:if="${#fields.hasErrors('titel')}" th:errors="*{titel}"
                                          class="error"></span></div>
 
-                <div class="Blogform___Invulveld____Titel"><input type="text" th:field="*{titel}" id="titel"
+                <div class="Invulveld"><input type="text" th:field="*{titel}" id="titel"
                                                                  th:placeholder="#{col_e.g.titel}"></div>
 
 
                 <div class="Blogform___Titel____Post"><label for="post" th:text="#{col_post}"> </label></div>
 
-                <div class="Blogform___Invulveld____Post"><textarea rows="5" cols="60" th:field="*{post}" id="post"
+                <div class="Invulveld"><textarea rows="5" cols="60" th:field="*{post}" id="post"
                                                                     th:placeholder="#{col_e.g.text}"></textarea></div>
                 <div class="Error"><span th:if="${#fields.hasErrors('post')}" th:errors="*{post}"
                                                             class="error"></span></div>
@@ -90,7 +90,7 @@
                 </div>
                 <br>
                 <div class="Blogpost___Delete">
-                    <button><a th:href="@{~/delete/{id}(id =${Blogpost.id})}" th:text="#{delete}"></a></button>
+                    <button><a th:href="@{~/delete/{id}(id =${Blogpost.id})}" th:text="#{delete}" onclick="return confirm('Are you sure you want to delete this? / Voulez-vous vraiment supprimer cela? / Weet u zeker dat u dit wilt verwijderen? / Möchten Sie dies wirklich löschen?')"></a></button>
                 </div>
 
             </div>
