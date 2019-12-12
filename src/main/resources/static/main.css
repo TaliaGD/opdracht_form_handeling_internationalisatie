@@ -1,0 +1,55 @@
+.All{
+    background-color: black !important;
+
+
+}
+.container-fluid{
+
+    margin: 20px;
+
+}
+h1{
+    text-align: center;
+    padding:20px;
+    color: antiquewhite;
+
+}
+
+.Blogform{
+    text-align: left;
+    color: antiquewhite;
+}
+
+.Blogform___Titel____User{
+    text: bold;
+
+}
+
+.Blogform___Titel____Post{
+    text: bold;
+}
+h2{
+    color: antiquewhite;
+}
+
+.Blogpost{
+    padding: 20px;
+    color: antiquewhite;
+}
+.Blogpost___Post___Titel{
+    text: bold;
+}
+a{
+    text-decoration: none;
+}
+button{
+    color: black;
+}
+
+
+.Blogpost:nth-child(even){
+    background-color: #f64824 !important;
+}
+.Blogpost:nth-child(odd){
+    background-color: #2d2123 !important;
+}

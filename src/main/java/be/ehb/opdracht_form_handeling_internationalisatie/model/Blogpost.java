@@ -9,6 +9,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 public class Blogpost {
@@ -19,12 +20,12 @@ public class Blogpost {
     @NotNull
     @Size (min = 4, max=20)
     public String user;
-    public LocalDate date ;
+    public LocalDateTime date ;
     @NotBlank
     public String post;
 
     public Blogpost() {
-        date=LocalDate.now();
+        date=LocalDateTime.now();
     }
 
     public int getId() {
@@ -43,10 +44,13 @@ public class Blogpost {
         this.user = user;
     }
 
-    public LocalDate getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
 
     public String getPost() {
         return post;

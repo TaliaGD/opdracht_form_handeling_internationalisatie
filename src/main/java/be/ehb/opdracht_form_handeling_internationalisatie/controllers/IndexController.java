@@ -38,13 +38,13 @@ public class IndexController {
     if(bindingResult.hasErrors())
         return "index";
     dao.save(nBlogpost);
-    return "redict:/index";
+    return "redirect:/index";
     }
 
     @RequestMapping(value = "/delete/{id}", method = RequestMethod.GET)
     public String deleteBlogpost(@PathVariable(value = "id")int id){
         dao.deleteById(id);
-        return "redict:/index";
+        return "redirect:/index";
     }
 
 }
